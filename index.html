@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A simple book list app" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>My Book List</title>
+  </head>
+  <body>
+    <header>
+      <h1>My Book List</h1>
+    </header>
+    <form class="container">
+      <div>
+        <label for="title">Title</label>
+        <input type="text" name="title" id="title" maxlength="64" required />
+      </div>
+      <div>
+        <label for="author">Author</label>
+        <input type="text" name="author" id="author" maxlength="64" required />
+      </div>
+      <div>
+        <button type="submit">Add Book</button>
+      </div>
+    </form>
+    <table class="container">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <script src="./script.js"></script>
+  </body>
+</html>
